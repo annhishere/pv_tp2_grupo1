@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+</head>
+<body>
+    <script>
+        let numeros = [], cant, num;
+        cant = parseInt(prompt("¿Cuántos números desea ingresar?"));
+        for (let i = 0; i < cant; i++) {
+            num = parseFloat(prompt(`Ingrese el número ${i + 1}:`));
+            numeros.push(num);
+        }
+        /*Funcion FLecha*/
+        const mostrarArreglo = (nros) => {
+            for (let i = 0; i < nros.length; i++) {
+                document.write(nros[i]);
+                document.write("<br>"); 
+            }
+        }
+        //Invocar la función
+        mostrarArreglo(numeros);
+    </script>
+</body>
+</html>
