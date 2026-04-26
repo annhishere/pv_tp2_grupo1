@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18</title>
+</head>
+<body>
+    <h1>Ejercicio 18</h1>
+    <script>
+        let num1, num2;
+
+        num1 = parseInt(prompt("Ingrese el primer número:"));
+        num2 = parseInt(prompt("Ingrese el segundo número:"));
+
+        const calcularMayor = (n1, n2) => {
+            if (n1 > n2) {
+                return `El número mayor es ${n1}`;
+            } else if (n2 > n1) {
+                return `El número mayor es ${n2}`;
+            } else {
+                return "Ambos números son iguales";
+            }
+        }
+
+        document.write(calcularMayor(num1, num2));
+    </script>
+
+</body>
+</html>
