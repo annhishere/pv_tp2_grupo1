@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Ejercicio 8</title> 
+</head>
+
+<body>
+    <script>
+    // Declarar un array (lista) con 10 notas
+    const notas = [8, 5, 10, 6, 4, 7, 3, 9, 6, 2];
+    // const se usa porque el array no cambia (siempre son las mismas notas)
+
+    // Variables auxiliares
+    let suma = 0; 
+    // Guarda la suma total de las notas para luego calcular el promedio
+
+    let aprobadas = 0; 
+    // Contador para saber cuántas notas son mayores o iguales a 6
+
+    // a) Mostrar todas las notas
+    document.write(`<h3>Todas las notas:</h3>`); 
+    // Muestra un título en la página
+    
+    for (let i = 0; i < notas.length; i++) { 
+        // Recorre el array desde la posición 0 hasta la última
+        // i es el índice (posición) del array
+
+        document.write(`${notas[i]} <br>`); 
+        // Muestra cada nota en pantalla
+        // <br> sirve para hacer un salto de línea
+
+        suma += notas[i]; 
+        // Va sumando cada nota (acumulador)
+
+        if (notas[i] >= 6) { 
+            // Si la nota es mayor o igual a 6 → está aprobada
+            aprobadas++; 
+            // Aumenta en 1 el contador de aprobadas
+        }
+    }
+
+    // b) Mostrar notas aprobadas
+    document.write(`<h3>Notas aprobadas:</h3>`); 
+
+    for (let i = 0; i < notas.length; i++) { 
+        // Vuelve a recorrer el array
+
+        if (notas[i] >= 6) { 
+            // Condición de aprobado
+            document.write(`${notas[i]} <br>`); 
+            // Muestra solo las aprobadas
+        }
+    }
+
+    // c) Mostrar notas desaprobadas
+    document.write(`<h3>Notas desaprobadas:</h3>`); 
+
+    for (let i = 0; i < notas.length; i++) { 
+        // Recorre el array otra vez
+
+        if (notas[i] < 6) { 
+            // Condición de desaprobado
+            document.write(`${notas[i]} <br>`); 
+            // Muestra solo las desaprobadas
+        }
+    }
+
+    // d) Calcular promedio
+    const promedio = suma / notas.length; 
+    // Divide la suma total por la cantidad de notas
+
+    document.write(`<h3>Promedio: ${promedio}</h3>`); 
+    // Muestra el promedio en pantalla
+
+    // e) Mostrar cantidad de aprobadas
+    document.write(`<h3>Cantidad de aprobadas: ${aprobadas}</h3>`); 
+    // Muestra cuántas notas fueron aprobadas
+
+    </script> <!-- Fin del código JavaScript -->
+</body>
+</html>
