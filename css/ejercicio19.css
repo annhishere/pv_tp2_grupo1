@@ -1,0 +1,30 @@
+:root {
+    --texto-negro: #000000;
+    --texto-blanco: #ffffff;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 35px;
+    text-shadow: 5px 5px 5px white;
+    background: linear-gradient(to bottom, #ffffff, #6200ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Estilo del botón */
+#btnCambiar {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+}
+/* Efecto hover */
+#btnCambiar:hover {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #a200ff;
+    transform: scale(1.05);
+}
