@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+</head>
+<body>
+    <script>
+        // Ejercicio 14: Escribir una función llamada duplicar que reciba un arreglo de números y retorne un
+        // nuevo arreglo donde cada número esté multiplicado por dos (2). El usuario debe
+        // ingresar cuantos números se almacenarán en el array e ingresar cada número de forma
+        // iterativa.
+        let cantidad = parseInt(prompt("¿Cuántos numeros se van a almacenar en el arreglo?"));
+        let arreglo = [];
+
+        for (let i = 0; i < cantidad; i++) {
+            let num = prompt(`Ingresa el número ${i + 1}:`); 
+            arreglo.push(parseInt(num));
+        }
+        function duplicar(arrayEntrada) {
+            let arreglofinal = [];
+            for (let i = 0; i < arrayEntrada.length; i++) {
+                arreglofinal.push(arrayEntrada[i] * 2);
+            }
+            return arreglofinal;
+        }
+
+        let arregloDuplicado = duplicar(arreglo);
+
+        document.write(`arreglo original: [${arreglo}] <br>`);
+
+        document.write(`arreglo duplicado:[${arregloDuplicado}]`);
+
+    </script>
+</body>
+</html>

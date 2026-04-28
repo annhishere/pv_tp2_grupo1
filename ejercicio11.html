@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+<body>
+    <script>
+        let kms = [],lts = [],consumo=0;
+        kms = parseInt(prompt("Cantidad de kilometros recorridos:"));
+        lts = parseInt(prompt("Litros de combustible consumidos:"));
+
+        const calcularConsumo=(k,l)=>{
+            consumo = l / k;
+            return consumo;
+        }
+        const mostrar=()=>{
+            document.write(`Consumo de combustible por kilometro: ${calcularConsumo(kms,lts).toFixed(2)}lt/s`);
+        }
+        mostrar();
+    </script>
+</body>
+</html>
