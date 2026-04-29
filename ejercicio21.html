@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 21 - Países y Capitales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #aacfe0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h2{
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #333;
+            text-align: center;
+        }
+        .contenedor {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        select {
+            padding: 8px;
+            margin: 10px 20px 10px 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Seleccionar País</h2>
+
+        <!-- Lista de países -->
+        <select id="paises">
+            <option value="">Seleccionar</option>
+            <option value="argentina">Argentina</option>
+            <option value="brasil">Brasil</option>
+            <option value="chile">Chile</option>
+            <option value="peru">Perú</option>
+            <option value="mexico">México</option>
+            <option value="colombia">Colombia</option>
+        </select>
+
+        <!-- Lista de capitales -->
+        <select id="capitales">
+            <option value="">Seleccionar</option>
+            <option value="buenosaires">Buenos Aires</option>
+            <option value="brasilia">Brasilia</option>
+            <option value="santiago">Santiago</option>
+            <option value="lima">Lima</option>
+            <option value="cdmx">Ciudad de México</option>
+            <option value="bogota">Bogotá</option>
+        </select>
+    </div>
+
+    <script src="js/ejercicio21.js"></script>
+</body>
+</html>
