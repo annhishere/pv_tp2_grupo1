@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, white,blue);
+    display: flex;
+    justify-content: center; /*centra horizontalmente*/
+    align-items: center; /*centra verticalmente*/
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 1);
+    width: 300px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+#out-box {
+    /*word-break: break-all;*/
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+p {
+    font-size: 20px;
+}
